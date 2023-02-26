@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'nunito', sans-serif;
+    background-color: #081a26;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 500px;
+    width: 250px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #61b8d3;
+    /* background-color: #ffd900; */
+    /* background-color: #ebf40f; */
+    /* background-color: #ebf40f; */
+    /* background-color: #dfe722; */
+}
+
+.nav .displayX {
+    width: 145px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    background-color: white;
+}
+.nav .displayY {
+    width: 145px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    background-color: white;
+}
+
+.container {
+    width: 535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: #61b8d3;
+    position: relative;
+    overflow: hidden;
+}
+
+.kotak {
+    width: 175px;
+    height: 175px;
+    background-color: #081a26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.kotak:hover {
+    opacity: .8;
+}
+.kotak:active {
+    opacity: 1;
+}
+
+.kotak svg.close {
+    background-color: #081a26;
+    color: #921ec7;
+    height: 160px;
+    position: absolute;
+    width: 150px;
+}
+.kotak svg.circle {
+    background-color: #081a26;
+    color: #ffd900;
+    height: 135px;
+    position: absolute;
+    width: 150px;
+
+}
+
+.kotak svg.close.active {
+    width: 160px;
+}
+.kotak svg.circle.active {
+    width: 135px;
+}
+
+.kotak .item {
+    width: 175px;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.kotak .item.active {
+    height: 175px;
+}
+
+.reset {
+    background-color: rgba(255, 255, 255, 0.219);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reset.active {
+    z-index: 999999999999;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+
+.garis {
+    width: 524px;
+    height: 15px;
+    background-color: #ff0000;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 15px;
+    opacity: .65;
+}
+
+.garis.h1 {
+    top: 80px;
+}
+.garis.h3 {
+    bottom: 80px;
+}
+
+.garis.v1 {
+    height: 524px;
+    width: 15px;
+    left: 80px;
+}
+.garis.v2 {
+    height: 524px;
+    width: 15px;
+}
+.garis.v3 {
+    height: 524px;
+    width: 15px;
+    right: 80px;
+}
+
+.garis.d1 {
+    width: 730px;
+    transform: rotate(45deg);
+}
+.garis.d2 {
+    width: 730px;
+    transform: rotate(-45deg);
+}
+
+.garis.none {
+    width: 0;
+}
+
+@keyframes alertLine {
+    0% {
+        display: block;
+    }
+    50% {
+        display: none;
+    }
+    100% {
+        display: block;
+    }
+}
